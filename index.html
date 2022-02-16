@@ -23,7 +23,36 @@
             font-style: italic;
             color: green;
         }
+
+
+        body{
+            counter-reset: section;
+        }
+
+        p::before{
+            counter-increment: section;
+            content:" list"counter(section) ":";
+            font-size: 50px;
+            color: coral;        }
+
+        ul{
+            font-size: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            ;
+            color: gold;
+        }
+
+        p:hover{
+            font-size: 90px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            background-color: red;
+        }
+            
     </style>
+
+
+
 
 </head>
 <body>
@@ -41,6 +70,15 @@
 1. SIBL=Social Islami Bank Ltd Securities not shahjalal
 2. DSE app works fine most of the time and by this app u will able to buy/sell any stock at any quantity by your own without taking any help from brokerage house, note that your brokerage house will arrange your log in ID and password.
         </h6>
+
+
+
+        <ul>
+            <p>Book</p>
+            <p>Develop</p>
+            <p>Github</p>
+            <p>Delta</p>
+        </ul>
 
         
 </body>
